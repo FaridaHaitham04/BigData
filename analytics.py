@@ -17,46 +17,63 @@ def main():
     # Load dataset
     df = pd.read_csv(input_file)
 
-    insights = []
+ 
+    # Insight 1: Salary range
 
-    # Insight 1: dataset shape
-    rows, cols = df.shape
-    insights.append(
-        f"The preprocessed dataset contains {rows} rows and {cols} columns."
-    )
+    if 'MonthlyIncome' in df.columns:
+        max_salary = df['MonthlyIncome'].max()
+        min_salary = df['MonthlyIncome'].min()
 
-    # Separate numeric and categorical columns
-    numeric_cols = df.select_dtypes(include="number").columns.tolist()
-    categorical_cols = df.select_dtypes(exclude="number").columns.tolist()
-
-    # Insight 2: numeric columns summary
-    if numeric_cols:
-        means = df[numeric_cols].mean(numeric_only=True)
-        top_mean_col = means.idxmax()
-        top_mean_val = means.max()
-        insights.append(
-            f"Among the numeric columns, '{top_mean_col}' has the highest average value ({top_mean_val:.2f})."
+        insight1 = (
+            f"The highest monthly income in the dataset is {max_salary}, "
+            f"while the lowest is {min_salary}, indicating variation in employee salaries."
         )
     else:
-        insights.append("There are no numeric columns available for numerical analysis.")
+        insight1 = "MonthlyIncome column not found, so salary analysis could not be performed."
 
-    # Insight 3: most frequent value in first categorical column
-    if categorical_cols:
-        col = categorical_cols[0]
-        most_common_value = df[col].mode(dropna=True)[0]
-        freq = df[col].value_counts(dropna=True).iloc[0]
-        insights.append(
-            f"In the categorical column '{col}', the most frequent value is '{most_common_value}', appearing {freq} times."
-        )
+    save_insight("insight1.txt", insight1)
+
+
+    # Insight 2: Attrition vs Salary
+  
+    if 'Attrition' in df.columns and 'MonthlyIncome' in df.columns:
+        avg_income = df.groupby('Attrition')['MonthlyIncome'].mean()
+
+        if 'Yes' in avg_income.index and 'No' in avg_income.index:
+            insight2 = (
+                f"Employees who left the company have an average income of {avg_income['Yes']:.2f}, "
+                f"while those who stayed have an average income of {avg_income['No']:.2f}. "
+                f"This suggests a relationship between salary and employee attrition."
+            )
+        else:
+            insight2 = "Not enough data to compare attrition groups."
     else:
-        insights.append("There are no categorical columns available for category-based analysis.")
+        insight2 = "Required columns for attrition analysis are missing."
 
-    # Save insights in separate files
-    save_insight("insight1.txt", insights[0])
-    save_insight("insight2.txt", insights[1])
-    save_insight("insight3.txt", insights[2])
+    save_insight("insight2.txt", insight2)
 
-    print("Generated insight1.txt, insight2.txt, and insight3.txt successfully.")
+    
+    # Insight 3: Department attrition
+   
+    if 'Department' in df.columns and 'Attrition' in df.columns:
+        attrition_df = df[df['Attrition'] == 'Yes']
+
+        if not attrition_df.empty:
+            top_dept = attrition_df['Department'].value_counts().idxmax()
+            count = attrition_df['Department'].value_counts().max()
+
+            insight3 = (
+                f"The department with the highest employee attrition is {top_dept}, "
+                f"with {count} employees leaving."
+            )
+        else:
+            insight3 = "No attrition cases found in the dataset."
+    else:
+        insight3 = "Department or Attrition column not found."
+
+    save_insight("insight3.txt", insight3)
+
+    print("Insights generated successfully.")
 
 
 if __name__ == "__main__":
