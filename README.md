@@ -28,6 +28,7 @@ The pipeline performs:
 - Docker
 
 ## DOCKER COMMANDS SPACE ##
+---------------------------
 
 
 # Pipeline Execution Flow
