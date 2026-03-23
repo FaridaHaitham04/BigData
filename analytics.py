@@ -1,4 +1,5 @@
 import sys
+import subprocess
 import pandas as pd
 
 
@@ -16,9 +17,9 @@ def main():
     df = pd.read_csv(input_file)
 
     # Insight 1: Income variation
-    if 'MonthlyIncome' in df.columns:
-        max_income = df['MonthlyIncome'].max()
-        min_income = df['MonthlyIncome'].min()
+    if "MonthlyIncome" in df.columns:
+        max_income = df["MonthlyIncome"].max()
+        min_income = df["MonthlyIncome"].min()
 
         insight1 = (
             f"In the preprocessed dataset, the highest scaled MonthlyIncome value is {max_income:.2f} "
@@ -30,17 +31,17 @@ def main():
     save_insight("insight1.txt", insight1)
 
     # Insight 2: Attrition vs income
-    if 'Attrition' in df.columns and 'MonthlyIncome' in df.columns:
-        avg_income = df.groupby('Attrition')['MonthlyIncome'].mean()
+    if "Attrition" in df.columns and "MonthlyIncome" in df.columns:
+        avg_income = df.groupby("Attrition")["MonthlyIncome"].mean()
 
         if len(avg_income) >= 2:
             lowest_group = avg_income.idxmin()
             highest_group = avg_income.idxmax()
 
             insight2 = (
-                f"The average scaled MonthlyIncome differs across attrition groups. "
-                f"Attrition group {lowest_group} has the lower average income ({avg_income[lowest_group]:.2f}), "
-                f"while attrition group {highest_group} has the higher average income ({avg_income[highest_group]:.2f})."
+                f"The average scaled MonthlyIncome differs across encoded attrition groups. "
+                f"Group {lowest_group} has the lower average income ({avg_income[lowest_group]:.2f}), "
+                f"while group {highest_group} has the higher average income ({avg_income[highest_group]:.2f})."
             )
         else:
             insight2 = "There are not enough attrition groups to compare average income."
@@ -50,16 +51,16 @@ def main():
     save_insight("insight2.txt", insight2)
 
     # Insight 3: Department with highest attrition
-    if 'Department' in df.columns and 'Attrition' in df.columns:
-        attrition_counts = df.groupby('Department')['Attrition'].sum()
+    if "Department" in df.columns and "Attrition" in df.columns:
+        attrition_counts = df.groupby("Department")["Attrition"].sum()
 
         if not attrition_counts.empty:
             top_department = attrition_counts.idxmax()
             top_value = attrition_counts.max()
 
             insight3 = (
-                f"Department code {top_department} has the highest total attrition score ({top_value}), "
-                f"which suggests it is the department most associated with employee leaving in the preprocessed data."
+                f"Encoded department {top_department} has the highest total attrition score ({top_value}), "
+                f"suggesting it is the department most associated with employee leaving in the processed dataset."
             )
         else:
             insight3 = "Department attrition analysis could not be completed because no grouped data was found."
@@ -69,6 +70,9 @@ def main():
     save_insight("insight3.txt", insight3)
 
     print("Insights generated successfully: insight1.txt, insight2.txt, insight3.txt")
+
+    # Call next script
+    subprocess.run(["python", "visualize.py", input_file], check=True)
 
 
 if __name__ == "__main__":

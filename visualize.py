@@ -12,7 +12,7 @@ def main():
     data_path = sys.argv[1]
     df = pd.read_csv(data_path)
 
-    numeric_df = df.select_dtypes(include=["int64", "float64"])
+    numeric_df = df.select_dtypes(include="number")
 
     if numeric_df.empty:
         print("No numeric columns found for visualization.")

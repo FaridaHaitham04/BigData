@@ -10,13 +10,12 @@ def main():
     data_path = sys.argv[1]
     df = pd.read_csv(data_path)
 
-    numeric_df = df.select_dtypes(include=["int64", "float64"])
+    numeric_df = df.select_dtypes(include="number")
 
     if numeric_df.empty:
         print("No numeric columns found for clustering.")
         sys.exit(1)
 
-    # Use a subset of features if available
     preferred_features = ["Age", "MonthlyIncome", "YearsAtCompany", "JobSatisfaction"]
     selected_features = [col for col in preferred_features if col in numeric_df.columns]
 
@@ -24,6 +23,10 @@ def main():
         cluster_data = numeric_df[selected_features]
     else:
         cluster_data = numeric_df
+
+    if len(cluster_data) < 3:
+        print("Not enough samples for 3 clusters.")
+        sys.exit(1)
 
     kmeans = KMeans(n_clusters=3, random_state=42, n_init=10)
     clusters = kmeans.fit_predict(cluster_data)

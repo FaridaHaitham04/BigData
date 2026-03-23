@@ -24,13 +24,16 @@ def main():
     for col in numeric_cols:
         df[col] = df[col].fillna(df[col].median())
 
-    # Task 3: Handle missing values (categorical → mode)
-    categorical_cols = df.select_dtypes(include=["object"]).columns
+    # Task 3: Handle missing values in categorical columns using mode
+    categorical_cols = df.select_dtypes(include=["object"]).columns.tolist()
     for col in categorical_cols:
-        df[col] = df[col].fillna(df[col].mode()[0])
+        if not df[col].mode().empty:
+            df[col] = df[col].fillna(df[col].mode()[0])
+
 
     # Fix inconsistent text (e.g., 'hr' vs 'HR')
-    df["Department"] = df["Department"].str.upper()
+    if "Department" in df.columns:
+        df["Department"] = df["Department"].astype(str).str.upper().str.strip()
 
   
                                                  # 2) FEATURE TRANSFORMATION
@@ -46,7 +49,8 @@ def main():
     df[numeric_cols] = scaler.fit_transform(df[numeric_cols])
 
     # Task 3 (extra): Create new feature
-    df["Income_per_Year"] = df["MonthlyIncome"] * 12
+    if "MonthlyIncome" in df.columns:
+        df["Income_per_Year"] = df["MonthlyIncome"] * 12
 
 
                                                 # 3) DIMENSIONALITY REDUCTION 
@@ -62,8 +66,8 @@ def main():
     df["PCA2"] = pca_result[:, 1]
 
     # Task 3 (extra): Drop less useful column
-    df = df.drop(columns=["EmployeeID"])
-
+    if "EmployeeID" in df.columns:
+        df = df.drop(columns=["EmployeeID"])
  
                                                 # 4) DISCRETIZATION 
 
