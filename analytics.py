@@ -1,6 +1,5 @@
 import sys
 import pandas as pd
-import subprocess
 
 
 def save_insight(filename, text):
@@ -8,75 +7,74 @@ def save_insight(filename, text):
         f.write(text)
 
 
-def main():
+def main():ss
     if len(sys.argv) < 2:
         print("Usage: python analytics.py <input_csv>")
         sys.exit(1)
 
     input_file = sys.argv[1]
-
-    # Load dataset
     df = pd.read_csv(input_file)
 
- 
-    # Insight 1: Salary range
-
+    # -------------------------
+    # Insight 1: Income variation
+    # -------------------------
     if 'MonthlyIncome' in df.columns:
-        max_salary = df['MonthlyIncome'].max()
-        min_salary = df['MonthlyIncome'].min()
+        max_income = df['MonthlyIncome'].max()
+        min_income = df['MonthlyIncome'].min()
 
         insight1 = (
-            f"The highest monthly income in the dataset is {max_salary}, "
-            f"while the lowest is {min_salary}, indicating variation in employee salaries."
+            f"In the preprocessed dataset, the highest scaled MonthlyIncome value is {max_income:.2f} "
+            f"and the lowest is {min_income:.2f}, showing variation in employee income levels."
         )
     else:
-        insight1 = "MonthlyIncome column not found, so salary analysis could not be performed."
+        insight1 = "MonthlyIncome column was not found, so income analysis could not be performed."
 
     save_insight("insight1.txt", insight1)
 
-
-    # Insight 2: Attrition vs Salary
-  
+    # -------------------------
+    # Insight 2: Attrition vs income
+    # -------------------------
     if 'Attrition' in df.columns and 'MonthlyIncome' in df.columns:
         avg_income = df.groupby('Attrition')['MonthlyIncome'].mean()
 
-        if 'Yes' in avg_income.index and 'No' in avg_income.index:
+        if len(avg_income) >= 2:
+            lowest_group = avg_income.idxmin()
+            highest_group = avg_income.idxmax()
+
             insight2 = (
-                f"Employees who left the company have an average income of {avg_income['Yes']:.2f}, "
-                f"while those who stayed have an average income of {avg_income['No']:.2f}. "
-                f"This suggests a relationship between salary and employee attrition."
+                f"The average scaled MonthlyIncome differs across attrition groups. "
+                f"Attrition group {lowest_group} has the lower average income ({avg_income[lowest_group]:.2f}), "
+                f"while attrition group {highest_group} has the higher average income ({avg_income[highest_group]:.2f})."
             )
         else:
-            insight2 = "Not enough data to compare attrition groups."
+            insight2 = "There are not enough attrition groups to compare average income."
     else:
-        insight2 = "Required columns for attrition analysis are missing."
+        insight2 = "Attrition or MonthlyIncome column was not found, so attrition-income analysis could not be performed."
 
     save_insight("insight2.txt", insight2)
 
-    
-    # Insight 3: Department attrition
-   
+    # -------------------------
+    # Insight 3: Department with highest attrition
+    # -------------------------
     if 'Department' in df.columns and 'Attrition' in df.columns:
-        attrition_df = df[df['Attrition'] == 'Yes']
+        attrition_counts = df.groupby('Department')['Attrition'].sum()
 
-        if not attrition_df.empty:
-            top_dept = attrition_df['Department'].value_counts().idxmax()
-            count = attrition_df['Department'].value_counts().max()
+        if not attrition_counts.empty:
+            top_department = attrition_counts.idxmax()
+            top_value = attrition_counts.max()
 
             insight3 = (
-                f"The department with the highest employee attrition is {top_dept}, "
-                f"with {count} employees leaving."
+                f"Department code {top_department} has the highest total attrition score ({top_value}), "
+                f"which suggests it is the department most associated with employee leaving in the preprocessed data."
             )
         else:
-            insight3 = "No attrition cases found in the dataset."
+            insight3 = "Department attrition analysis could not be completed because no grouped data was found."
     else:
-        insight3 = "Department or Attrition column not found."
+        insight3 = "Department or Attrition column was not found, so department attrition analysis could not be performed."
 
     save_insight("insight3.txt", insight3)
 
-    print("Insights generated successfully.")
-
-    subprocess.run(["python", "visualize.py", input_file], check=True)
+    print("Insights generated successfully: insight1.txt, insight2.txt, insight3.txt")
 
 
 if __name__ == "__main__":
