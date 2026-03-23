@@ -1,5 +1,6 @@
 import sys
 import pandas as pd
+import subprocess
 
 
 def save_insight(filename, text):
@@ -74,6 +75,8 @@ def main():
     save_insight("insight3.txt", insight3)
 
     print("Insights generated successfully.")
+
+    subprocess.run(["python", "visualize.py", input_file], check=True)
 
 
 if __name__ == "__main__":
