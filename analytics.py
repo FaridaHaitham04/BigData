@@ -7,7 +7,7 @@ def save_insight(filename, text):
         f.write(text)
 
 
-def main():ss
+def main():
     if len(sys.argv) < 2:
         print("Usage: python analytics.py <input_csv>")
         sys.exit(1)
@@ -15,9 +15,7 @@ def main():ss
     input_file = sys.argv[1]
     df = pd.read_csv(input_file)
 
-    # -------------------------
     # Insight 1: Income variation
-    # -------------------------
     if 'MonthlyIncome' in df.columns:
         max_income = df['MonthlyIncome'].max()
         min_income = df['MonthlyIncome'].min()
@@ -31,9 +29,7 @@ def main():ss
 
     save_insight("insight1.txt", insight1)
 
-    # -------------------------
     # Insight 2: Attrition vs income
-    # -------------------------
     if 'Attrition' in df.columns and 'MonthlyIncome' in df.columns:
         avg_income = df.groupby('Attrition')['MonthlyIncome'].mean()
 
@@ -53,9 +49,7 @@ def main():ss
 
     save_insight("insight2.txt", insight2)
 
-    # -------------------------
     # Insight 3: Department with highest attrition
-    # -------------------------
     if 'Department' in df.columns and 'Attrition' in df.columns:
         attrition_counts = df.groupby('Department')['Attrition'].sum()
 
