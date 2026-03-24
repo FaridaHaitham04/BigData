@@ -65,7 +65,7 @@ def main():
     df["PCA1"] = pca_result[:, 0]
     df["PCA2"] = pca_result[:, 1]
 
-    # Task 3 (extra): Drop less useful column
+    #  (extra): Drop less useful column
     if "EmployeeID" in df.columns:
         df = df.drop(columns=["EmployeeID"])
  
@@ -89,7 +89,7 @@ def main():
 
     print(f"Preprocessed data saved to {output_path}")
 
-    # Call next script
+    
     subprocess.run(["python", "analytics.py", output_path], check=True)
 
 

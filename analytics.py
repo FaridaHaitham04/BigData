@@ -71,7 +71,7 @@ def main():
 
     print("Insights generated successfully: insight1.txt, insight2.txt, insight3.txt")
 
-    # Call next script
+   
     subprocess.run(["python", "visualize.py", input_file], check=True)
 
 
