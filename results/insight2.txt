@@ -1,0 +1,1 @@
+The average scaled MonthlyIncome differs across encoded attrition groups. Group 1 has the lower average income (-0.01), while group 0 has the higher average income (0.01).

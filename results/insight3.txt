@@ -1,0 +1,1 @@
+Encoded department 3 has the highest total attrition score (50), suggesting it is the department most associated with employee leaving in the processed dataset.

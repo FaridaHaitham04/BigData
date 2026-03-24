@@ -1,0 +1,521 @@
+EmployeeID,Age,Department,Gender,EducationField,MonthlyIncome,YearsAtCompany,JobSatisfaction,MaritalStatus,Attrition
+E2000,,Marketing,Female,Marketing,11078.0,14,4,Divorced,No
+E2001,46.0,Finance,Male,Other,8090.0,20,4,Single,No
+E2002,32.0,HR,Female,Medical,8082.0,9,2,Single,No
+E2003,25.0,Marketing,Male,Other,19018.0,22,2,Married,Yes
+E2004,38.0,hr,Male,Other,3925.0,38,1,Single,Yes
+E2005,56.0,IT,Female,Human Resources,8917.0,4,1,,Yes
+E2006,36.0,HR,Female,Life Sciences,2552.0,0,3,Married,No
+E2007,40.0,Operations,Male,Medical,5911.0,12,4,Single,No
+E2008,28.0,HR,Male,Technical Degree,5389.0,20,2,Divorced,Yes
+E2009,,HR,Male,Technical Degree,15629.0,25,1,Single,No
+E2010,41.0,operations,Female,Marketing,4430.0,20,3,Single,Yes
+E2011,53.0,finance,Female,Marketing,2458.0,17,3,Married,No
+E2012,57.0,HR,Female,Technical Degree,15395.0,36,2,Single,Yes
+E2013,41.0,Operations,Female,Marketing,2207.0,31,2,Married,No
+E2014,20.0,Marketing,Female,Life Sciences,2899.0,35,3,Divorced,Yes
+E2015,39.0,IT,Male,Other,13653.0,16,1,Divorced,Yes
+E2016,19.0,IT,Female,Marketing,18405.0,34,3,Divorced,Yes
+E2017,41.0,HR,Male,Human Resources,10601.0,10,4,Single,Yes
+E2018,47.0,Finance,Male,Marketing,2894.0,20,4,Married,Yes
+E2019,55.0,Finance,Male,Medical,2514.0,25,2,Divorced,Yes
+E2020,19.0,Marketing,Female,Life Sciences,6109.0,3,1,Married,No
+E2021,38.0,HR,Female,Medical,15258.0,33,1,Married,No
+E2022,50.0,IT,Female,Medical,17313.0,17,4,Divorced,No
+E2023,,Finance,Male,Human Resources,17349.0,39,3,Divorced,Yes
+E2024,39.0,HR,Male,Life Sciences,9179.0,34,2,Married,Yes
+E2025,42.0,Finance,Male,Life Sciences,12326.0,28,3,Divorced,No
+E2026,44.0,Operations,Male,Life Sciences,13787.0,28,3,Married,Yes
+E2027,59.0,Finance,Male,Life Sciences,3560.0,37,3,Married,Yes
+E2028,45.0,IT,Male,Life Sciences,15612.0,20,1,Divorced,Yes
+E2029,33.0,Sales,Female,Human Resources,19650.0,12,4,Single,Yes
+E2030,32.0,Marketing,Female,Marketing,6780.0,16,1,Divorced,Yes
+E2031,20.0,Marketing,Female,Medical,13894.0,8,4,Single,No
+E2032,54.0,IT,Female,Life Sciences,,0,2,Married,No
+E2033,24.0,,Male,Marketing,6790.0,1,2,Married,No
+E2034,38.0,HR,Male,Marketing,18690.0,28,3,Single,No
+E2035,26.0,Finance,Female,Medical,12181.0,32,4,Married,No
+E2036,56.0,,Male,Human Resources,9057.0,9,4,Single,Yes
+E2037,35.0,Marketing,Female,Technical Degree,18082.0,39,4,Single,Yes
+E2038,21.0,Finance,Female,Technical Degree,2661.0,20,3,Married,Yes
+E2039,42.0,Marketing,Female,Marketing,6644.0,27,3,Single,Yes
+E2040,31.0,HR,Male,Other,17711.0,10,2,Divorced,No
+E2041,26.0,Marketing,Female,Other,4920.0,33,1,Divorced,No
+E2042,43.0,Marketing,Female,Medical,18002.0,7,4,Married,No
+E2043,,sales,Female,Technical Degree,16025.0,21,4,Married,Yes
+E2044,37.0,Sales,Male,Marketing,10946.0,7,1,Single,No
+E2045,45.0,Operations,Male,Human Resources,14732.0,14,4,Single,Yes
+E2046,24.0,,Female,Technical Degree,8236.0,16,3,Single,No
+E2047,25.0,Marketing,Male,Marketing,18309.0,22,3,Single,No
+E2048,52.0,IT,Male,Marketing,,23,4,Divorced,Yes
+E2049,31.0,Marketing,Male,Life Sciences,2352.0,18,3,Divorced,Yes
+E2050,34.0,IT,Male,Human Resources,9005.0,4,3,Married,No
+E2051,53.0,IT,Male,Life Sciences,16036.0,31,4,Single,No
+E2052,57.0,sales,Male,Medical,18542.0,0,2,Single,Yes
+E2053,21.0,Finance,Male,Life Sciences,2956.0,22,1,Married,No
+E2054,19.0,HR,Male,Life Sciences,4071.0,36,3,Single,No
+E2055,23.0,Sales,Male,Technical Degree,10595.0,7,2,Single,Yes
+E2056,59.0,Sales,Male,Other,17140.0,12,3,Single,No
+E2057,21.0,Finance,Female,Marketing,14803.0,7,3,Single,Yes
+E2058,46.0,HR,Female,Human Resources,5453.0,22,1,Single,No
+E2059,35.0,Marketing,Male,Life Sciences,8675.0,0,3,Married,Yes
+E2060,43.0,Operations,Female,Human Resources,2955.0,23,1,Single,No
+E2061,51.0,Operations,Female,Other,8295.0,34,1,Married,Yes
+E2062,27.0,Marketing,Male,Other,17921.0,23,1,Single,No
+E2063,53.0,Sales,MALE,Life Sciences,17282.0,16,2,Divorced,Yes
+E2064,31.0,HR,Male,Medical,6703.0,4,4,Divorced,No
+E2065,48.0,,Female,Life Sciences,8563.0,19,2,Divorced,No
+E2066,32.0,,Female,Technical Degree,14003.0,20,4,Divorced,No
+E2067,25.0,Sales,Male,Marketing,12817.0,39,4,Married,No
+E2068,31.0,Sales,Male,Medical,13171.0,30,1,Married,No
+E2069,40.0,Marketing,MALE,Life Sciences,14582.0,35,3,Single,No
+E2070,57.0,Marketing,Female,Human Resources,14201.0,10,1,Divorced,No
+E2071,38.0,Marketing,Female,Medical,19778.0,14,3,Married,No
+E2072,33.0,Operations,Female,Medical,14473.0,18,4,Single,No
+E2073,35.0,IT,Female,Life Sciences,11461.0,6,1,Single,Yes
+E2074,41.0,Marketing,Male,Medical,17596.0,27,3,Married,Yes
+E2075,43.0,HR,Male,Human Resources,2529.0,4,2,Divorced,No
+E2076,42.0,Operations,Male,Other,14765.0,4,3,Single,Yes
+E2077,58.0,Finance,Male,Medical,15910.0,29,1,Divorced,No
+E2078,46.0,HR,Female,Other,13561.0,31,2,Divorced,No
+E2079,32.0,HR,Female,Human Resources,11131.0,7,3,Divorced,Yes
+E2080,,Marketing,Male,Life Sciences,2525.0,9,3,Single,No
+E2081,42.0,Finance,Male,Marketing,18385.0,37,3,Divorced,No
+E2082,24.0,,Female,Medical,2374.0,31,3,Single,Yes
+E2083,26.0,Operations,Male,Marketing,14197.0,27,3,Divorced,Yes
+E2084,41.0,Finance,Female,Human Resources,6648.0,16,2,Single,No
+E2085,18.0,it,Male,Medical,4365.0,30,4,Divorced,Yes
+E2086,25.0,Marketing,Male,Other,19909.0,7,2,Married,Yes
+E2087,41.0,Finance,Male,Technical Degree,3646.0,39,2,Divorced,No
+E2088,28.0,Operations,Male,Marketing,2013.0,24,2,Divorced,Yes
+E2089,34.0,IT,Male,Medical,6599.0,8,4,Single,Yes
+E2090,25.0,Sales,MALE,Marketing,4278.0,1,1,Single,No
+E2091,52.0,Sales,Male,Medical,16296.0,14,4,Divorced,Yes
+E2092,52.0,IT,Female,Life Sciences,5155.0,2,2,Married,Yes
+E2093,50.0,Operations,Female,Other,10321.0,35,3,Married,No
+E2094,22.0,IT,FEMALE,Marketing,5814.0,3,3,Single,No
+E2095,59.0,Marketing,Female,Technical Degree,15125.0,13,2,Married,No
+E2096,56.0,Marketing,Female,Technical Degree,5216.0,24,3,Divorced,Yes
+E2097,58.0,Sales,Male,Human Resources,4113.0,9,2,Single,No
+E2098,45.0,Finance,Male,Medical,12238.0,20,3,Divorced,No
+E2099,24.0,Operations,Female,Marketing,15760.0,35,4,Single,Yes
+E2100,26.0,Sales,Male,Human Resources,14588.0,11,1,Single,No
+E2101,25.0,Finance,Female,Marketing,,26,1,Single,No
+E2102,29.0,Finance,Female,Medical,8430.0,39,4,Single,No
+E2103,51.0,Marketing,MALE,Technical Degree,,1,4,Married,No
+E2104,50.0,,Male,Life Sciences,2629.0,12,2,Divorced,Yes
+E2105,40.0,HR,Male,Technical Degree,18653.0,31,2,Divorced,No
+E2106,41.0,IT,Female,Human Resources,12831.0,30,2,Divorced,No
+E2107,54.0,Marketing,Male,Other,7724.0,15,3,Single,Yes
+E2108,52.0,Finance,Female,Life Sciences,13083.0,31,2,Married,No
+E2109,57.0,operations,Female,Human Resources,,31,4,Divorced,Yes
+E2110,39.0,HR,Female,Medical,11472.0,33,1,Married,Yes
+E2111,44.0,Finance,Male,Life Sciences,8276.0,10,3,Single,Yes
+E2112,52.0,HR,Male,Human Resources,17635.0,9,2,Divorced,No
+E2113,18.0,HR,Female,Medical,7895.0,14,3,Married,Yes
+E2114,52.0,HR,Male,Technical Degree,15994.0,16,3,Single,Yes
+E2115,54.0,Operations,Male,Other,12552.0,39,2,Married,Yes
+E2116,31.0,Marketing,Male,Medical,18959.0,17,3,Divorced,No
+E2117,20.0,Operations,Female,Marketing,8099.0,8,1,Divorced,No
+E2118,18.0,Sales,Female,Medical,11499.0,24,4,Single,No
+E2119,,Finance,Male,Medical,5178.0,39,4,Single,No
+E2120,43.0,,Female,Other,8116.0,13,1,Single,No
+E2121,31.0,Marketing,Male,Marketing,17563.0,24,3,Married,No
+E2122,56.0,Marketing,Male,Human Resources,5568.0,21,2,Married,No
+E2123,44.0,Marketing,Male,Human Resources,11847.0,29,3,Married,Yes
+E2124,26.0,Operations,Male,Medical,16135.0,19,1,Single,Yes
+E2125,32.0,Marketing,Female,Marketing,19774.0,20,3,Divorced,Yes
+E2126,32.0,IT,Female,Marketing,3742.0,31,4,Divorced,Yes
+E2127,43.0,Finance,Female,Other,2619.0,20,3,Married,No
+E2128,59.0,Marketing,Male,Technical Degree,19658.0,34,1,Married,Yes
+E2129,30.0,Finance,Male,Human Resources,19340.0,31,4,Divorced,Yes
+E2130,49.0,IT,Male,Other,3939.0,29,3,Divorced,Yes
+E2131,56.0,IT,Female,Life Sciences,18001.0,38,3,Married,Yes
+E2132,49.0,Finance,Male,Human Resources,2968.0,11,4,Married,No
+E2133,21.0,HR,Female,Other,16846.0,17,2,Divorced,No
+E2134,47.0,,Female,Human Resources,2281.0,20,4,Single,No
+E2135,54.0,HR,Female,Technical Degree,17360.0,12,2,Married,Yes
+E2136,40.0,HR,Female,Life Sciences,8262.0,20,1,Divorced,No
+E2137,56.0,Operations,Female,Technical Degree,3058.0,7,1,Divorced,Yes
+E2138,32.0,HR,Female,Life Sciences,12724.0,39,4,Divorced,No
+E2139,46.0,Marketing,Male,Medical,7178.0,6,4,Divorced,No
+E2140,53.0,Operations,Male,Other,8980.0,22,1,Single,No
+E2141,30.0,Operations,Female,Life Sciences,11200.0,31,2,Divorced,No
+E2142,49.0,IT,Female,Technical Degree,3229.0,10,1,Married,No
+E2143,,HR,Male,Human Resources,10467.0,21,4,Single,Yes
+E2144,39.0,IT,Female,Life Sciences,4289.0,21,1,Divorced,No
+E2145,45.0,Finance,Female,Other,3239.0,24,4,Single,Yes
+E2146,19.0,Sales,Male,Life Sciences,7370.0,21,4,Married,Yes
+E2147,59.0,Operations,Female,Marketing,18170.0,27,1,Divorced,Yes
+E2148,23.0,Finance,Female,Human Resources,2125.0,28,2,Married,Yes
+E2149,45.0,Finance,Female,Other,14504.0,12,3,Divorced,Yes
+E2150,45.0,Marketing,Male,Other,17398.0,17,1,Divorced,No
+E2151,37.0,Sales,Male,Medical,8638.0,1,3,Divorced,No
+E2152,47.0,Finance,Male,Technical Degree,8570.0,28,1,Divorced,No
+E2153,28.0,Finance,Female,Medical,5249.0,20,3,Divorced,No
+E2154,45.0,Sales,Female,Other,11110.0,14,2,Single,Yes
+E2155,42.0,Sales,Male,Human Resources,9595.0,26,2,Divorced,No
+E2156,56.0,Finance,Female,Life Sciences,15605.0,30,1,Divorced,No
+E2157,50.0,Sales,Female,Life Sciences,14115.0,14,4,Single,Yes
+E2158,18.0,finance,Female,Human Resources,8294.0,22,3,Single,Yes
+E2159,44.0,Finance,FEMALE,Other,7757.0,23,4,Single,No
+E2160,30.0,Marketing,Female,Life Sciences,,12,4,Single,No
+E2161,58.0,hr,Male,Life Sciences,3969.0,21,4,Single,Yes
+E2162,20.0,Finance,Female,Life Sciences,12985.0,36,2,Single,No
+E2163,56.0,IT,Male,Technical Degree,19275.0,32,1,Divorced,No
+E2164,23.0,Operations,Female,Technical Degree,6470.0,2,1,Divorced,No
+E2165,25.0,HR,Male,Marketing,12225.0,18,2,Married,No
+E2166,44.0,HR,Female,Medical,11556.0,22,2,Divorced,Yes
+E2167,26.0,HR,Male,Human Resources,11206.0,28,1,Divorced,Yes
+E2168,54.0,,Female,Human Resources,11991.0,29,4,Single,Yes
+E2169,50.0,Finance,Male,Human Resources,9519.0,38,3,Single,No
+E2170,59.0,Marketing,Female,Marketing,15669.0,24,3,Divorced,No
+E2171,,Finance,Male,Technical Degree,6612.0,36,3,Married,No
+E2172,32.0,Marketing,Female,Other,14373.0,7,4,Single,No
+E2173,49.0,Marketing,Male,Other,19582.0,15,1,Divorced,No
+E2174,49.0,Operations,MALE,Marketing,17552.0,7,2,Divorced,Yes
+E2175,41.0,IT,Female,Other,16646.0,0,1,Married,No
+E2176,58.0,Marketing,Female,Human Resources,7238.0,4,4,Married,No
+E2177,29.0,Operations,Male,Medical,,2,2,Single,Yes
+E2178,56.0,Sales,Female,Life Sciences,17504.0,0,4,Married,No
+E2179,19.0,IT,Male,Technical Degree,5719.0,3,3,Divorced,Yes
+E2180,20.0,Marketing,Male,Technical Degree,2302.0,39,3,Divorced,Yes
+E2181,54.0,HR,Male,Marketing,14144.0,34,4,Married,Yes
+E2182,34.0,Sales,Female,Technical Degree,19370.0,31,2,Married,Yes
+E2183,19.0,Sales,Male,Human Resources,12055.0,33,2,Married,Yes
+E2184,19.0,Operations,Male,Other,6440.0,24,1,Married,No
+E2185,45.0,Sales,Female,Human Resources,5072.0,9,3,Single,Yes
+E2186,40.0,IT,Female,Marketing,15598.0,20,1,Married,Yes
+E2187,54.0,Marketing,Female,Human Resources,16287.0,38,1,Single,No
+E2188,49.0,Marketing,Female,Other,15965.0,26,4,Divorced,No
+E2189,50.0,HR,Male,Medical,11519.0,26,4,Married,Yes
+E2190,18.0,Operations,Male,Marketing,15380.0,1,1,Single,No
+E2191,36.0,HR,Male,Medical,13865.0,12,3,Married,No
+E2192,19.0,Sales,Male,Life Sciences,10125.0,8,4,Divorced,Yes
+E2193,43.0,HR,Female,Medical,5291.0,35,1,Divorced,Yes
+E2194,49.0,IT,Male,Life Sciences,6033.0,21,1,Divorced,No
+E2195,23.0,Marketing,Male,Life Sciences,7105.0,25,1,Married,Yes
+E2196,49.0,Sales,Female,Medical,19087.0,11,1,Married,Yes
+E2197,21.0,HR,Male,Marketing,10133.0,16,1,Single,No
+E2198,28.0,Operations,Male,Other,,13,1,Divorced,Yes
+E2199,34.0,IT,Male,Human Resources,7704.0,13,4,Married,Yes
+E2200,55.0,IT,Male,Human Resources,9848.0,33,3,Divorced,Yes
+E2201,41.0,hr,Male,Other,14975.0,19,1,Divorced,Yes
+E2202,22.0,Marketing,Male,Life Sciences,8924.0,10,2,Single,Yes
+E2203,51.0,HR,Female,Life Sciences,,15,4,Single,No
+E2204,23.0,,Female,Marketing,9114.0,30,4,Single,No
+E2205,39.0,,Male,Technical Degree,,5,1,Single,Yes
+E2206,28.0,IT,Male,Medical,5173.0,18,4,Divorced,No
+E2207,33.0,HR,Female,Life Sciences,3667.0,36,1,Single,Yes
+E2208,50.0,Marketing,Male,Human Resources,6114.0,3,3,Single,Yes
+E2209,26.0,Operations,Male,Marketing,5553.0,3,3,Single,Yes
+E2210,23.0,Finance,Male,Medical,9761.0,19,4,Single,Yes
+E2211,33.0,HR,Female,Marketing,3000.0,9,4,Divorced,Yes
+E2212,,,Male,Medical,17638.0,23,2,Single,No
+E2213,20.0,Marketing,Female,Medical,19772.0,34,4,Divorced,No
+E2214,37.0,Operations,Male,Other,7450.0,25,2,Married,Yes
+E2215,53.0,IT,Female,Life Sciences,5712.0,36,3,Divorced,No
+E2216,36.0,Marketing,Female,Marketing,3367.0,37,3,Divorced,Yes
+E2217,43.0,Marketing,Male,Marketing,10189.0,20,1,Single,No
+E2218,20.0,Marketing,Female,Other,11013.0,39,3,Married,Yes
+E2219,36.0,Marketing,Male,Human Resources,18838.0,38,2,Married,No
+E2220,37.0,Sales,Female,Human Resources,5726.0,20,4,Married,Yes
+E2221,49.0,Sales,Male,Life Sciences,6806.0,9,1,Married,Yes
+E2222,24.0,IT,Male,Life Sciences,4190.0,37,2,Divorced,No
+E2223,58.0,HR,Female,Technical Degree,,3,4,Married,No
+E2224,50.0,Marketing,MALE,Other,14178.0,19,1,Divorced,Yes
+E2225,57.0,Operations,Male,Human Resources,4875.0,16,3,Divorced,No
+E2226,56.0,HR,Female,Medical,7592.0,6,2,Divorced,Yes
+E2227,35.0,Operations,Male,Marketing,19824.0,3,4,Married,No
+E2228,57.0,HR,Male,Life Sciences,14592.0,28,1,Single,No
+E2229,18.0,it,FEMALE,Marketing,10927.0,13,1,Single,Yes
+E2230,28.0,Marketing,Female,Marketing,16437.0,2,3,Married,No
+E2231,,Marketing,Male,Technical Degree,13530.0,23,4,Single,No
+E2232,42.0,Finance,Male,Human Resources,9010.0,36,3,Single,Yes
+E2233,40.0,Operations,Female,Life Sciences,13207.0,15,3,Divorced,No
+E2234,48.0,hr,Female,Marketing,4989.0,3,4,Divorced,Yes
+E2235,47.0,HR,Male,Life Sciences,14040.0,23,4,Married,Yes
+E2236,59.0,Sales,Female,Medical,11218.0,33,4,Married,Yes
+E2237,52.0,Finance,MALE,Technical Degree,8471.0,29,2,Single,Yes
+E2238,24.0,Sales,Male,Medical,4863.0,17,4,Divorced,Yes
+E2239,33.0,sales,Male,Life Sciences,12693.0,18,1,Married,No
+E2240,43.0,Sales,Male,Life Sciences,3177.0,30,3,Married,Yes
+E2241,19.0,operations,Male,Human Resources,6760.0,18,2,Married,Yes
+E2242,18.0,operations,Female,Marketing,,18,4,Married,No
+E2243,29.0,IT,Female,Marketing,18353.0,21,2,Married,No
+E2244,22.0,IT,Female,Medical,13556.0,23,4,Married,No
+E2245,54.0,Sales,FEMALE,Technical Degree,13563.0,11,2,Single,Yes
+E2246,49.0,Finance,Male,Other,16051.0,29,3,Divorced,Yes
+E2247,26.0,,Male,Marketing,13022.0,37,3,Divorced,Yes
+E2248,58.0,Operations,Male,Human Resources,10234.0,30,1,Married,No
+E2249,52.0,Finance,Male,Medical,18173.0,35,1,Divorced,Yes
+E2250,36.0,Marketing,Female,Medical,15178.0,18,4,Divorced,No
+E2251,33.0,Operations,Male,Other,8570.0,35,3,Divorced,Yes
+E2252,20.0,Operations,Male,Human Resources,2406.0,29,2,Married,No
+E2253,37.0,IT,Female,Technical Degree,11206.0,32,2,Married,Yes
+E2254,41.0,HR,Female,Human Resources,6431.0,17,2,Divorced,Yes
+E2255,50.0,HR,Female,Technical Degree,8542.0,27,1,Divorced,Yes
+E2256,41.0,Marketing,Female,Human Resources,10906.0,10,2,Married,No
+E2257,28.0,Marketing,Male,Human Resources,6146.0,32,1,Single,No
+E2258,25.0,Operations,Male,Life Sciences,14046.0,16,1,Divorced,Yes
+E2259,53.0,Sales,Female,Medical,,5,4,Single,Yes
+E2260,55.0,IT,Male,Human Resources,15076.0,3,2,Divorced,Yes
+E2261,57.0,IT,Male,Other,18524.0,19,2,Single,No
+E2262,37.0,,Male,Human Resources,6882.0,26,3,Single,Yes
+E2263,52.0,Finance,Female,Marketing,16113.0,14,4,Single,Yes
+E2264,42.0,Sales,Male,Medical,15645.0,5,3,Married,Yes
+E2265,52.0,Operations,FEMALE,Marketing,8012.0,13,4,Single,Yes
+E2266,42.0,Sales,Male,Medical,19347.0,10,2,Single,No
+E2267,46.0,Sales,Male,Marketing,9151.0,38,1,Single,No
+E2268,35.0,Sales,Male,Human Resources,5610.0,8,1,Divorced,Yes
+E2269,35.0,Operations,Female,Human Resources,11884.0,25,1,Single,Yes
+E2270,19.0,IT,Male,Life Sciences,8894.0,15,1,Divorced,No
+E2271,52.0,IT,Female,Other,15467.0,4,1,Single,No
+E2272,33.0,Sales,Female,Marketing,18489.0,9,3,Single,Yes
+E2273,,Finance,Female,Technical Degree,11873.0,2,4,Married,No
+E2274,53.0,HR,Male,Life Sciences,14289.0,12,2,Divorced,No
+E2275,50.0,Operations,Male,Marketing,14208.0,29,3,Single,Yes
+E2276,21.0,HR,Male,Marketing,12828.0,5,4,Divorced,No
+E2277,50.0,Finance,Male,Life Sciences,4137.0,16,1,Divorced,No
+E2278,31.0,Operations,Female,Human Resources,3286.0,18,4,Married,Yes
+E2279,38.0,Sales,Female,Marketing,17710.0,34,4,Married,Yes
+E2280,,IT,Female,Human Resources,13371.0,25,1,Married,No
+E2281,,HR,Male,Life Sciences,17945.0,4,1,Married,Yes
+E2282,24.0,Marketing,Female,Human Resources,9052.0,28,1,Married,No
+E2283,20.0,Marketing,Male,Medical,5654.0,36,2,Married,Yes
+E2284,34.0,Finance,Female,Technical Degree,17600.0,19,1,Married,No
+E2285,,Sales,Male,Marketing,10636.0,20,2,Married,Yes
+E2286,,HR,Male,Other,8441.0,9,1,Single,No
+E2287,39.0,Sales,Female,Technical Degree,11667.0,4,2,Divorced,No
+E2288,39.0,HR,Female,Human Resources,14149.0,35,4,Married,No
+E2289,47.0,Finance,Female,Marketing,3798.0,5,3,Married,Yes
+E2290,55.0,Finance,Female,Human Resources,11600.0,25,4,Divorced,Yes
+E2291,55.0,marketing,Male,Medical,7495.0,3,4,Single,No
+E2292,25.0,Sales,Female,Life Sciences,11900.0,38,1,Divorced,No
+E2293,44.0,Operations,Female,Marketing,15673.0,38,2,Divorced,Yes
+E2294,44.0,Marketing,Female,Medical,13130.0,34,3,Married,Yes
+E2295,51.0,Sales,Male,Medical,17222.0,0,1,Divorced,Yes
+E2296,38.0,Marketing,Male,Marketing,3300.0,23,1,Divorced,Yes
+E2297,47.0,operations,Female,Human Resources,11435.0,35,1,Married,Yes
+E2298,50.0,IT,Male,Other,6616.0,5,4,Married,Yes
+E2299,45.0,IT,Female,Medical,18393.0,30,2,Married,No
+E2300,50.0,IT,Male,Technical Degree,12617.0,19,2,Married,Yes
+E2301,22.0,IT,Male,Medical,7752.0,23,3,Divorced,No
+E2302,36.0,HR,Male,Other,11852.0,24,2,Divorced,Yes
+E2303,21.0,IT,Male,Human Resources,8295.0,35,2,Single,Yes
+E2304,52.0,,FEMALE,Human Resources,19456.0,20,1,Single,No
+E2305,34.0,Finance,Female,Technical Degree,5225.0,29,1,Divorced,No
+E2306,45.0,Finance,Female,Medical,3316.0,23,4,Single,Yes
+E2307,47.0,HR,Male,Human Resources,14337.0,29,1,Divorced,No
+E2308,46.0,IT,Female,Other,8807.0,21,1,Single,No
+E2309,23.0,IT,Female,Marketing,5683.0,27,1,Married,No
+E2310,52.0,IT,Female,Life Sciences,9227.0,6,1,Single,No
+E2311,58.0,Marketing,Male,Life Sciences,,34,4,Married,Yes
+E2312,54.0,Sales,MALE,Life Sciences,2145.0,27,1,Married,No
+E2313,41.0,Marketing,Male,Medical,7010.0,13,3,Married,Yes
+E2314,46.0,Sales,FEMALE,Technical Degree,18035.0,9,3,Married,Yes
+E2315,48.0,IT,Female,Human Resources,5040.0,15,3,Single,Yes
+E2316,52.0,IT,Female,Marketing,11654.0,15,3,Divorced,Yes
+E2317,50.0,Marketing,Male,Other,18866.0,30,1,Married,No
+E2318,38.0,Marketing,Male,Marketing,19633.0,24,3,Single,No
+E2319,49.0,Sales,Female,Other,19014.0,12,1,Married,Yes
+E2320,40.0,Finance,Male,Medical,16996.0,5,4,Single,Yes
+E2321,50.0,Sales,Male,Life Sciences,,8,3,Single,Yes
+E2322,20.0,Marketing,Male,Medical,10853.0,35,2,Single,Yes
+E2323,,Operations,Male,Technical Degree,13695.0,19,3,Divorced,No
+E2324,42.0,Marketing,Female,Technical Degree,4852.0,17,3,Single,Yes
+E2325,59.0,Operations,Male,Other,18014.0,20,1,Single,No
+E2326,48.0,HR,Male,Human Resources,2987.0,3,3,Divorced,Yes
+E2327,20.0,Marketing,Male,Human Resources,9622.0,32,2,Divorced,Yes
+E2328,,HR,Male,Other,,26,1,Single,Yes
+E2329,41.0,Finance,Female,Technical Degree,19484.0,6,1,Divorced,Yes
+E2330,49.0,Sales,Female,Technical Degree,8652.0,5,4,Married,No
+E2331,,Operations,Male,Technical Degree,9421.0,14,4,Married,No
+E2332,40.0,Sales,Male,Medical,2769.0,17,3,Divorced,No
+E2333,19.0,HR,Male,Technical Degree,19727.0,31,4,Divorced,Yes
+E2334,44.0,Operations,Male,Marketing,16114.0,10,4,Single,Yes
+E2335,59.0,Sales,Male,Life Sciences,6358.0,19,4,Divorced,No
+E2336,19.0,Marketing,Male,Technical Degree,13543.0,23,1,Single,No
+E2337,43.0,IT,Female,Other,7699.0,14,1,Married,Yes
+E2338,34.0,HR,Male,Life Sciences,19625.0,6,1,Divorced,Yes
+E2339,57.0,Sales,Female,Medical,3125.0,20,4,Single,No
+E2340,50.0,HR,Female,Other,12793.0,25,1,Single,Yes
+E2341,26.0,HR,Male,Life Sciences,8764.0,13,4,Married,Yes
+E2342,56.0,Operations,Female,Other,14323.0,36,1,Divorced,No
+E2343,46.0,Operations,Female,Medical,15031.0,20,1,Married,Yes
+E2344,59.0,IT,Female,Marketing,16052.0,17,2,Single,No
+E2345,43.0,Marketing,Female,Medical,14640.0,4,3,Single,Yes
+E2346,52.0,HR,Female,Medical,9843.0,2,4,Divorced,No
+E2347,42.0,Sales,Female,Other,16210.0,22,2,Single,Yes
+E2348,41.0,Finance,Male,Human Resources,18456.0,25,1,Divorced,No
+E2349,30.0,,Female,Technical Degree,12106.0,36,4,Married,No
+E2350,24.0,HR,Female,Technical Degree,7189.0,23,1,Divorced,No
+E2351,53.0,IT,Female,Marketing,,18,3,Divorced,No
+E2352,,Marketing,Male,Marketing,19091.0,24,2,Single,Yes
+E2353,18.0,Finance,Female,Technical Degree,8704.0,20,3,Single,Yes
+E2354,25.0,Operations,Male,Human Resources,5713.0,11,2,Divorced,No
+E2355,33.0,Operations,Female,Technical Degree,7051.0,32,1,Single,Yes
+E2356,31.0,Sales,Male,Human Resources,12756.0,3,3,Single,Yes
+E2357,29.0,Finance,Male,Marketing,4475.0,6,3,Single,Yes
+E2358,,Operations,Female,Life Sciences,5610.0,21,1,Divorced,Yes
+E2359,32.0,Sales,Female,Other,6255.0,32,3,Single,Yes
+E2360,45.0,Marketing,Male,Marketing,16484.0,16,4,Divorced,No
+E2361,51.0,Sales,Female,Marketing,3735.0,23,2,Single,No
+E2362,19.0,Operations,Male,Medical,10258.0,33,2,Married,No
+E2363,49.0,it,Male,Medical,9979.0,27,2,Single,No
+E2364,40.0,IT,Male,Medical,4428.0,38,4,Single,Yes
+E2365,39.0,IT,Male,Other,14345.0,21,2,Divorced,Yes
+E2366,42.0,Operations,Male,Medical,9426.0,16,1,Divorced,No
+E2367,39.0,IT,Female,Human Resources,10533.0,33,3,Single,Yes
+E2368,39.0,finance,Male,Technical Degree,7249.0,5,4,Married,Yes
+E2369,59.0,Marketing,Male,Life Sciences,11686.0,5,2,Single,No
+E2370,23.0,Sales,Female,Marketing,16109.0,33,1,Single,Yes
+E2371,32.0,Sales,Male,Human Resources,2661.0,0,3,Married,No
+E2372,54.0,Operations,FEMALE,Life Sciences,,9,3,Divorced,No
+E2373,50.0,IT,Female,Human Resources,16788.0,20,4,Single,Yes
+E2374,25.0,IT,Female,Human Resources,12060.0,4,4,Divorced,Yes
+E2375,22.0,HR,Male,Marketing,,1,4,Divorced,No
+E2376,56.0,Marketing,Male,Technical Degree,12526.0,21,1,Married,No
+E2377,21.0,Finance,Male,Medical,5374.0,1,1,Married,Yes
+E2378,23.0,Sales,Female,Other,2207.0,9,4,Divorced,No
+E2379,49.0,,Male,Technical Degree,4665.0,33,2,Single,No
+E2380,47.0,HR,Female,Other,2632.0,15,3,Divorced,No
+E2381,52.0,Operations,Male,Marketing,5083.0,38,3,Single,Yes
+E2382,57.0,,Female,Marketing,,21,1,Single,No
+E2383,33.0,Operations,Male,Marketing,12123.0,11,3,Married,Yes
+E2384,30.0,Finance,Male,Life Sciences,9123.0,23,2,Single,No
+E2385,59.0,HR,Male,Other,12754.0,39,3,Single,Yes
+E2386,47.0,HR,Female,Technical Degree,3679.0,37,1,Divorced,No
+E2387,36.0,marketing,Female,Technical Degree,17901.0,9,1,Married,Yes
+E2388,34.0,Finance,Male,Human Resources,2236.0,34,2,Single,Yes
+E2389,36.0,HR,Male,Human Resources,9446.0,31,2,Single,Yes
+E2390,45.0,finance,Female,Human Resources,6443.0,6,3,Married,No
+E2391,43.0,Sales,Female,Marketing,17463.0,20,3,Divorced,No
+E2392,54.0,IT,Female,Technical Degree,10555.0,19,1,Married,No
+E2393,43.0,HR,Male,Other,18669.0,25,2,Married,Yes
+E2394,40.0,Marketing,FEMALE,Marketing,2148.0,3,2,Single,No
+E2395,26.0,Sales,Male,Life Sciences,15395.0,21,2,Single,Yes
+E2396,29.0,Finance,FEMALE,Human Resources,6895.0,14,3,Divorced,No
+E2397,18.0,,Male,Marketing,19396.0,39,2,Single,Yes
+E2398,18.0,,Female,Marketing,13023.0,20,1,Single,Yes
+E2399,51.0,hr,Female,Life Sciences,12699.0,14,1,Married,Yes
+E2400,49.0,Finance,Female,Medical,11715.0,21,3,Single,No
+E2401,42.0,IT,Female,Technical Degree,18163.0,27,4,Divorced,No
+E2402,57.0,Sales,Female,Other,,13,3,Married,No
+E2403,18.0,HR,Male,Medical,18724.0,26,4,Divorced,Yes
+E2404,33.0,Marketing,Female,Human Resources,4817.0,39,2,Married,Yes
+E2405,56.0,Operations,Female,Marketing,,27,3,Single,No
+E2406,22.0,Finance,Female,Life Sciences,7299.0,25,1,Married,No
+E2407,39.0,Sales,Male,Life Sciences,11917.0,1,2,Married,No
+E2408,46.0,Sales,Female,Technical Degree,5267.0,24,1,Single,Yes
+E2409,20.0,IT,Male,Medical,6406.0,2,2,Single,Yes
+E2410,29.0,IT,Female,Technical Degree,19826.0,7,3,Divorced,Yes
+E2411,43.0,Marketing,Female,Marketing,12382.0,32,4,Divorced,Yes
+E2412,33.0,Operations,Male,Technical Degree,6437.0,34,2,Single,Yes
+E2413,54.0,Marketing,Female,Other,7435.0,5,4,Single,No
+E2414,39.0,HR,Male,Life Sciences,6107.0,38,2,Single,Yes
+E2415,46.0,HR,Male,Life Sciences,2560.0,22,1,Married,Yes
+E2416,31.0,Marketing,Female,Human Resources,14329.0,24,1,Married,Yes
+E2417,45.0,Operations,Male,Human Resources,3826.0,18,2,Married,Yes
+E2418,22.0,Marketing,Female,Marketing,13421.0,4,4,Single,Yes
+E2419,47.0,Operations,Female,Other,14265.0,10,3,Divorced,No
+E2420,22.0,Operations,Male,Medical,9629.0,11,3,Single,Yes
+E2421,29.0,Finance,MALE,Technical Degree,10325.0,9,1,Married,Yes
+E2422,33.0,operations,Male,Marketing,9693.0,7,3,Married,Yes
+E2423,,IT,Male,Human Resources,10264.0,23,1,Single,No
+E2424,43.0,Operations,Female,Technical Degree,14686.0,27,3,Single,No
+E2425,38.0,Operations,Female,Human Resources,15716.0,35,2,Married,No
+E2426,56.0,Operations,Male,Technical Degree,8721.0,36,1,Married,Yes
+E2427,53.0,HR,Female,Medical,9373.0,20,1,Married,No
+E2428,50.0,IT,Female,Marketing,7907.0,7,2,Single,Yes
+E2429,47.0,IT,Female,Technical Degree,18127.0,8,1,Married,Yes
+E2430,54.0,Marketing,Female,Other,7656.0,14,3,Married,No
+E2431,40.0,Finance,Male,Life Sciences,,39,3,Divorced,Yes
+E2432,27.0,Operations,Male,Other,10286.0,17,1,Single,Yes
+E2433,22.0,Sales,Female,Other,7901.0,19,3,Divorced,Yes
+E2434,53.0,Finance,MALE,Life Sciences,,5,4,Divorced,No
+E2435,51.0,Finance,Male,Other,10429.0,11,1,Married,Yes
+E2436,48.0,IT,Male,Technical Degree,16716.0,1,2,Single,Yes
+E2437,27.0,Finance,Female,Technical Degree,17795.0,6,4,Married,No
+E2438,36.0,Operations,Female,Technical Degree,13138.0,15,1,Single,Yes
+E2439,49.0,Operations,Female,Life Sciences,4530.0,2,2,Divorced,Yes
+E2440,18.0,HR,Male,Other,19432.0,2,3,Single,No
+E2441,22.0,Operations,Female,Life Sciences,7772.0,26,2,Married,Yes
+E2442,21.0,Operations,Female,Technical Degree,17476.0,39,4,Married,Yes
+E2443,33.0,IT,Male,Other,17751.0,37,3,Married,Yes
+E2444,41.0,Operations,Female,Other,4964.0,32,1,Single,Yes
+E2445,33.0,hr,Female,Human Resources,9137.0,27,3,Divorced,Yes
+E2446,19.0,Sales,Male,Human Resources,19347.0,0,1,Divorced,No
+E2447,45.0,IT,Male,Medical,18920.0,7,1,Single,No
+E2448,49.0,Sales,Male,Marketing,15891.0,36,2,Married,No
+E2449,44.0,IT,Female,Human Resources,9340.0,31,2,Divorced,No
+E2450,37.0,Marketing,Female,Life Sciences,9967.0,36,2,Married,Yes
+E2451,41.0,Finance,FEMALE,Human Resources,14415.0,3,4,Single,Yes
+E2452,,Marketing,Male,Medical,13871.0,29,4,Married,Yes
+E2453,52.0,Operations,Male,Other,13916.0,5,2,Divorced,Yes
+E2454,50.0,Sales,Female,Medical,10734.0,18,4,Divorced,Yes
+E2455,50.0,Operations,Female,Other,2845.0,31,3,Married,No
+E2456,54.0,Finance,Male,Other,4494.0,8,3,Single,No
+E2457,29.0,IT,Male,Marketing,14677.0,11,4,Married,Yes
+E2458,20.0,Finance,Male,Human Resources,14330.0,10,4,Single,Yes
+E2459,18.0,,Male,Life Sciences,7179.0,15,3,Married,Yes
+E2460,50.0,Finance,Female,Life Sciences,8610.0,0,1,Divorced,No
+E2461,57.0,HR,Male,Technical Degree,8430.0,20,3,Single,Yes
+E2462,27.0,Finance,Female,Other,9154.0,29,3,Single,Yes
+E2463,46.0,HR,FEMALE,Life Sciences,15828.0,12,4,Single,Yes
+E2464,30.0,Sales,Female,Marketing,12145.0,33,3,Divorced,No
+E2465,29.0,Operations,Male,Other,8488.0,3,4,Married,Yes
+E2466,48.0,Operations,Male,Marketing,5850.0,27,4,Divorced,No
+E2467,19.0,Marketing,Male,Life Sciences,19073.0,37,2,Single,No
+E2468,52.0,Operations,Male,Life Sciences,15564.0,30,3,Married,No
+E2469,40.0,IT,Female,Technical Degree,7078.0,26,1,Divorced,No
+E2470,34.0,,Male,Life Sciences,14168.0,4,2,Single,No
+E2471,,,Male,Other,7448.0,24,4,Single,No
+E2472,25.0,IT,Female,Other,19563.0,2,4,Divorced,Yes
+E2473,46.0,IT,Male,Other,11074.0,32,1,Divorced,Yes
+E2474,43.0,,Female,,8406.0,3,4,Divorced,Yes
+E2475,27.0,Operations,Female,Technical Degree,10800.0,24,3,Single,No
+E2476,43.0,Sales,Female,Life Sciences,16083.0,19,2,Divorced,Yes
+E2477,51.0,Sales,Female,Medical,3638.0,33,4,Single,No
+E2478,58.0,Marketing,Female,Medical,12340.0,25,4,Divorced,No
+E2479,24.0,Sales,Female,Technical Degree,3382.0,4,1,Single,No
+E2480,21.0,finance,Female,Life Sciences,3403.0,34,3,Single,Yes
+E2481,28.0,Sales,Female,Medical,11011.0,27,4,Married,No
+E2482,46.0,Marketing,Male,Life Sciences,5292.0,28,1,Divorced,No
+E2483,,Sales,Male,Life Sciences,11011.0,8,4,Divorced,Yes
+E2484,42.0,Finance,Male,Life Sciences,2419.0,37,1,Single,
+E2485,38.0,HR,MALE,Human Resources,14411.0,5,1,Single,No
+E2486,53.0,Marketing,Female,Other,6517.0,18,3,Single,No
+E2487,27.0,hr,Male,Life Sciences,17422.0,10,4,Married,Yes
+E2488,54.0,HR,Female,Human Resources,11700.0,1,3,Married,Yes
+E2489,26.0,HR,Male,Technical Degree,7693.0,8,1,Single,Yes
+E2490,41.0,IT,Male,Medical,2767.0,20,2,Divorced,No
+E2491,52.0,Operations,Male,Other,16818.0,23,4,Divorced,Yes
+E2492,52.0,IT,Female,Medical,3549.0,33,2,Married,Yes
+E2493,53.0,Operations,Male,Other,11956.0,21,4,Married,Yes
+E2494,35.0,HR,Female,Medical,8140.0,2,3,Single,No
+E2495,,Marketing,Female,Other,12837.0,11,3,Divorced,Yes
+E2496,49.0,Operations,Male,Medical,,27,3,Single,Yes
+E2497,41.0,Finance,Male,Medical,6481.0,29,3,Married,Yes
+E2498,40.0,Finance,Male,Medical,8548.0,25,3,Divorced,Yes
+E2499,49.0,Sales,Female,Medical,6837.0,20,2,Divorced,Yes
+E2079,32.0,HR,Female,Human Resources,11131.0,7,3,Divorced,Yes
+E2171,,Finance,Male,Technical Degree,6612.0,36,3,Married,No
+E2271,52.0,IT,Female,Other,15467.0,4,1,Single,No
+E2462,27.0,Finance,Female,Other,9154.0,29,3,Single,Yes
+E2060,43.0,Operations,FEMALE,Human Resources,2955.0,23,1,Single,No
+E2235,47.0,HR,Male,Life Sciences,14040.0,23,4,Married,Yes
+E2204,23.0,,Female,Marketing,9114.0,30,4,Single,No
+E2112,52.0,HR,MALE,Human Resources,17635.0,9,2,Divorced,No
+E2191,36.0,HR,Male,Medical,13865.0,12,3,Married,No
+E2486,53.0,Marketing,Female,Other,6517.0,18,3,Single,No
+E2055,23.0,Sales,Male,Technical Degree,10595.0,7,2,Single,Yes
+E2357,29.0,Finance,Male,Marketing,4475.0,6,3,Single,Yes
+E2338,34.0,HR,Male,Life Sciences,19625.0,6,1,Divorced,Yes
+E2432,27.0,Operations,MALE,Other,10286.0,17,1,Single,Yes
+E2453,52.0,Operations,Male,Other,13916.0,5,2,Divorced,Yes
+E2173,49.0,Marketing,Male,Other,19582.0,15,1,Divorced,No
+E2004,38.0,HR,Male,Other,3925.0,38,1,Single,Yes
+E2118,18.0,Sales,Female,Medical,11499.0,24,4,Single,No
+E2213,20.0,Marketing,Female,Medical,19772.0,34,4,Divorced,No
+E2308,46.0,IT,Female,Other,8807.0,21,1,Single,No

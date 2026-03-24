@@ -1,0 +1,1 @@
+In the preprocessed dataset, the highest scaled MonthlyIncome value is 1.81 and the lowest is -1.73, showing variation in employee income levels.
