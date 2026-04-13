@@ -75,7 +75,7 @@ The summary.sh script is used to:
 -  Copy all generated output files from the Docker container to the host machine
 - Save them inside the results/ folder
 - Stop and remove the container
-- To run : .\summary.sh
+- To run : bash summary.sh
 
 # Output Files:
 results/
